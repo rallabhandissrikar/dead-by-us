@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg,rgb(23, 202, 53),#ac17ca,rgb(21, 153, 185));
+    background-size: 400% 400%;
+    animation: change 5s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+}
+
+.lidt {
+    box-shadow: 5px 5px 5px rgb(29, 180, 42);
+    margin: 0px;
+    border: 10px solid yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-items: center;
+    padding: 40px 40px 40px 40px;
+    border-radius: 30px;
+    top: 400px;
+    width: 500px;
+    height: 400px;
+    margin-left: 370px;
+    background-color: transparent;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    border-radius: 10px 20px 10px 20px;
+    border: 5px solid cyan;
+    outline: none;
+    transition: all 0.5s;
+    font-size: 20px;
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+button:hover {
+  border-radius: 20px 10px 20px 10px;
+  box-shadow: 4px 4px 40px 4px red;
+
+}
+
+input[type=text] {
+  margin-bottom: 10px;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 45px;
+  transition: all 1s;
+
+}
+
+input[type=text]:focus {
+  border-color: red;
+  box-shadow: 4px 4px 40px 4px red;
+}
+
+input[type=password] {
+  margin-bottom: 10px;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 45px;
+  transition: all 1s;
+
+}
+
+input[type=password]:focus {
+  border-color: red;
+  box-shadow: 4px 4px 40px 4px cyan;
+}
+
+.lidt h1 {
+  margin-bottom:20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 3s steps(17);
+  font-size: 40px;
+}
+
+.h1{
+  background: linear-gradient(-45deg, green,white,cyan,lightblue,orangered);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+    border-right: 3px solid black;
+  }
+  100% {
+    width:17ch;
+    border-right: 3px solid black;
+  }
+}
+@keyframes change {
+    0% {
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

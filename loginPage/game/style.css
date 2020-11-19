@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ body {
+  background-color: black;
+}
+
+input {
+  width: 1000px;
+  height: 50px;
+  font-size: 40px;
+  padding: 4px 4px 4px 4px;
+  margin: 10px 10px 10px 10px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+input:focus{
+  box-shadow: 0px 0px 50px 0px cyan;
+}
+
+button {
+  width: 500px;
+  height: 60px;
+  transition: all 0.5s;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+button:hover {
+  border-radius: 40px 40px 40px 40px;
+  border:5px solid red;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 50px 0px green;
+}
